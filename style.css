@@ -247,6 +247,17 @@ input::placeholder {
     margin: 0 1rem;
 }
 
+.testimony .image {
+    height: 150px;
+    width: 150px;
+}
+.testimony img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   /* For device whose width is less than 786px */
