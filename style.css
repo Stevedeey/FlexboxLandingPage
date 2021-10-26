@@ -258,9 +258,59 @@ input::placeholder {
     object-fit: cover;
 }
 
+/* Contact */
+.contact .row {
+    justify-content: center;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form input {
+    width: 50%;
+}
+
+.contact textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    font-size: 1.3rem;
+    resize: none;
+    color: #ccc;
+    margin: 1.2rem 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Footer */
+footer {
+    height: 80px;
+    background-color: #222;
+    color: #fff;
+    line-height: 80px;
+    text-align: center;
+}
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   /* For device whose width is less than 786px */
+
+   .row{
+        flex-direction: column;
+    }  
+  .about{
+        padding: 50px 0;
+  }
+    header{
+          height: 163vh;
+    }
+
+    .process h1{
+          text-align: center;
+    }
+    /* To add this after you have finished for desktop */
 
   nav {
     flex-direction: column;
@@ -288,4 +338,41 @@ input::placeholder {
   nav ul li a {
     color: #222;
   }
+
+  /* header content */
+    .header-content{
+        width: 100%;
+        top:16%;
+        left:0;
+        text-align: center;
+        padding:0 8px;
+    }
+    input[type=text],
+    input[type=email],
+    input[type=submit]{
+        width: 80%;
+        margin:1.2rem auto;
+    }
+
+    .progress-bar{
+        display: none;
+    }
+    .process-content{
+        margin-top: 20px;
+    }
+    .process .box1,
+    .process .box2,
+    .process .box3{
+        text-align: center;
+    }
+
+    /* Testimony */
+    .testimony .test{
+        margin:1.6rem 0;
+    }
+
+    .contact form input,
+    .contact textarea{
+        width: 100%;
+    }
 }
